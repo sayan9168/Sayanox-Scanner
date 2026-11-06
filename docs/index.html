@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayanox // Scanner — Unprivileged Network Diagnostics</title>
+  <meta name="description" content="High-performance, unprivileged local network diagnostics & TCP port scanner for Android. Cyber-neon dark UI, multi-profile scanning, real-time metrics." />
+  <meta name="theme-color" content="#0A0A0F" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">⚡</span>
+        <span class="logo-text">SAYANOX <span class="dim">//</span> SCANNER</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#tech">Tech</a>
+        <a href="#download" class="btn btn-sm">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="badge">UNPRIVILEGED · ANDROID 8.0+</div>
+      <h1>
+        High-performance<br />
+        <span class="gradient">TCP Port Scanner</span><br />
+        for Android
+      </h1>
+      <p class="hero-sub">
+        Cyber-neon minimalist dark UI. Multi-profile scanning. Real-time rate metrics.
+        Latency tracking. Zero root required.
+      </p>
+      <div class="hero-cta">
+        <a href="https://github.com/sayan9168/Sayanox-Scanner/releases" class="btn btn-primary" target="_blank" rel="noopener">
+          Download APK
+        </a>
+        <a href="https://github.com/sayan9168/Sayanox-Scanner" class="btn btn-ghost" target="_blank" rel="noopener">
+          View on GitHub →
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">48</span>
+          <span class="stat-label">Concurrent sockets</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">5</span>
+          <span class="stat-label">Scan profiles</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">0</span>
+          <span class="stat-label">Root needed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">// FEATURES</h2>
+      <div class="feature-grid">
+        <div class="card">
+          <div class="card-icon cyan">◉</div>
+          <h3>Multi-Profile Scanning</h3>
+          <p>Common (Top 20), Well-Known (1–1023), Registered, Full (1–65535), and fully custom ranges.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon magenta">⚡</div>
+          <h3>Real-time Metrics</h3>
+          <p>Live ports/sec rate, elapsed time, neon progress bar, and open/closed counters updating as you scan.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">◎</div>
+          <h3>Service Hints + Latency</h3>
+          <p>Automatic service detection (SSH, HTTP, MySQL, RDP, Redis…) with millisecond latency for every open port.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon cyan">◇</div>
+          <h3>Cyber-Neon UI</h3>
+          <p>Pure dark theme with cyan / magenta / green accents and monospace typography built for focus.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon magenta">▣</div>
+          <h3>Concurrent Engine</h3>
+          <p>Semaphore-limited parallel TCP connect scans. Configurable timeout and concurrency. Cancel anytime.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">⬡</div>
+          <h3>Zero Root</h3>
+          <p>Pure Java sockets. Works on any Android 8.0+ device without special privileges or binaries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="profiles" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">// SCAN PROFILES</h2>
+      <div class="profile-list">
+        <div class="profile-row">
+          <span class="profile-name">Common</span>
+          <span class="profile-desc">Top 20 frequently used ports</span>
+          <span class="profile-ports">21, 22, 80, 443, 3306…</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-name">Well-Known</span>
+          <span class="profile-desc">System ports 1–1023</span>
+          <span class="profile-ports">1 → 1023</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-name">Registered</span>
+          <span class="profile-desc">Common registered + 1024–2000</span>
+          <span class="profile-ports">1433, 5432, 6379…</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-name">Full</span>
+          <span class="profile-desc">Complete range (slow)</span>
+          <span class="profile-ports">1 → 65535</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-name">Custom</span>
+          <span class="profile-desc">User-defined from → to</span>
+          <span class="profile-ports">Any range</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech" class="section">
+    <div class="container">
+      <h2 class="section-title">// TECH STACK</h2>
+      <div class="tech-grid">
+        <div class="tech-item"><span>Kotlin 2.0</span></div>
+        <div class="tech-item"><span>Jetpack Compose</span></div>
+        <div class="tech-item"><span>Material 3</span></div>
+        <div class="tech-item"><span>Coroutines + Flow</span></div>
+        <div class="tech-item"><span>MVVM</span></div>
+        <div class="tech-item"><span>AGP 8.7</span></div>
+        <div class="tech-item"><span>Min SDK 26</span></div>
+        <div class="tech-item"><span>Target SDK 35</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="section cta-section">
+    <div class="container cta-box">
+      <h2>Ready to scan?</h2>
+      <p>Download the latest APK or clone the source and build it yourself.</p>
+      <div class="hero-cta">
+        <a href="https://github.com/sayan9168/Sayanox-Scanner/releases" class="btn btn-primary" target="_blank" rel="noopener">
+          Get Latest Release
+        </a>
+        <a href="https://github.com/sayan9168/Sayanox-Scanner" class="btn btn-ghost" target="_blank" rel="noopener">
+          Source Code
+        </a>
+      </div>
+      <p class="legal">
+        For authorized testing and educational use only.<br />
+        Unauthorized scanning may be illegal in your jurisdiction.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Sayanox // Scanner</strong><br />
+        <span class="dim">Part of the Sayanox ecosystem</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/sayan9168/Sayanox-Scanner" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/sayan9168" target="_blank" rel="noopener">@sayan9168</a>
+        <a href="https://github.com/sayan9168/Sayanox-Scanner/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
